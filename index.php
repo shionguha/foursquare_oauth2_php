@@ -2,28 +2,16 @@
 /*
  *      index.php
  *      
- *      Copyright 2011 Colin Wren <colin@gimpneek.com>
+ *      Copyright 2013 Shion Guha <sguha@cs.cornell.edu>
  *      
- *      This program is free software; you can redistribute it and/or modify
- *      it under the terms of the GNU General Public License as published by
- *      the Free Software Foundation; either version 2 of the License, or
- *      (at your option) any later version.
- *      
- *      This program is distributed in the hope that it will be useful,
- *      but WITHOUT ANY WARRANTY; without even the implied warranty of
- *      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *      GNU General Public License for more details.
- *      
- *      You should have received a copy of the GNU General Public License
- *      along with this program; if not, write to the Free Software
- *      Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
- *      MA 02110-1301, USA.
+ *      This script is written solely for the purpose of the glome project led by Prof. Stephen Wicker (ECE, Cornell University)
+ * 		and Shion Guha (PhD student, information science, Cornell University). 
  *      
  *      
  */
-$client_id = "INSERT YOUR CLIENT ID HERE";
-$secret = "INSERT YOUR SECRET ID HERE";
-$redirect = "INSERT YOUR REDIRECT URI HERE";
+$client_id = "520RC3NSGXPBO2K3RRMWJPLDGGO33ULBXJBTXIRIIVEMHSJM";
+$secret = "WKDZV4XA11531XYR2UJWE3BQ2VA1SLJSNTP4BKRSNS5UPQ4Y";
+$redirect = "http://shionguha.webfactional.com/scripts/4sq_Callback.php";
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -40,6 +28,7 @@ $redirect = "INSERT YOUR REDIRECT URI HERE";
 	<div id="content">
 	<h1>glome</h1>
 	<p>glome: This is an app which will collect all your 4sq data. Right now, it will just tell you your name.</p>
+	<p><b>Note:</b> If you signed up for foursquare using Facebook then you may not be able to use this app. Unfortunately, this is a constraint imposed by foursquare and oauth2. :(</p>
 	<p><a href="https://foursquare.com/oauth2/authenticate?client_id=<?php echo $client_id; ?>&response_type=code&redirect_uri=<?php echo $redirect; ?>" title="Login">Log in with Foursquare</a></p>
 	</div>
 	
