@@ -9,33 +9,88 @@
  *      
  *      
  */
-$client_id = "520RC3NSGXPBO2K3RRMWJPLDGGO33ULBXJBTXIRIIVEMHSJM";
-$secret = "WKDZV4XA11531XYR2UJWE3BQ2VA1SLJSNTP4BKRSNS5UPQ4Y";
-$redirect = "http://shionguha.webfactional.com/scripts/4sq_Callback.php";
+//defining our necessary keys and url here
+$client_id = "ENTER YOUR CLIENT ID HERE";
+$secret = "ENTER YOUR SECRET ID HERE";
+$redirect = "ENTER YOUR REDIRECT URI HERE";
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
- 
-<head>
-	<title>glome</title>
-	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-	<meta name="generator" content="Geany 0.20" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>glome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-</head>
- 
-<body>
-	<div id="content">
-	<h1>glome</h1>
-	<p>glome: This is an app which will collect all your 4sq data. Right now, it will just tell you your name.</p>
-	<p><b>Note:</b> If you signed up for foursquare using Facebook then you may not be able to use this app. Unfortunately, this is a constraint imposed by foursquare and oauth2. :(</p>
-	<p><a href="https://foursquare.com/oauth2/authenticate?client_id=<?php echo $client_id; ?>&response_type=code&redirect_uri=<?php echo $redirect; ?>" title="Login">Log in with Foursquare</a></p>
-	</div>
-	
-	<div id="footer">
-	<p class="left">This application uses the foursquare<sup>TM</sup> application programming interface but is not endorsed or certified by Foursquare Labs, Inc</p>
-	<p class="right"><img src="http://colinwren.com/projects/route/poweredbyfoursquare-mark.png" /></p>
-	</div>
-</body>
- 
+    <!-- Le styles -->
+    <link href="../bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- Main information here -->
+      <div class="hero-unit">
+        <h1>glome</h1>
+        <p> </p>
+        <p> </p>
+        <p>This is an app which will collect all your 4sq usage data. Please click on the button below to allow us access to your data.</p>
+        <p> </p>
+        <p> </p>
+        <p><a href="https://foursquare.com/oauth2/authenticate?client_id=<?php echo	$client_id; ?>&response_type=code&redirect_uri=<?php echo $redirect; ?>" class="btn btn-primary btn-large"> log in with foursquare &raquo;</a></p>
+        <p><b>Note:</b> If you signed up for foursquare using your Facebook credentials then you may not be able to use this app. Unfortunately, this is a constraint imposed by foursquare and oauth2. :(</p>
+        <p>Please try it at least once though.</p>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p class="left">This application uses the foursquare<sup>TM</sup> application programming interface but is not endorsed or certified by Foursquare Labs, Inc</p>
+		<p class="left"><img src="http://colinwren.com/projects/route/poweredbyfoursquare-mark.png" /></p></p>
+      </footer>
+
+    </div> <!-- /container -->
+   
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
 </html>
+ 
+
+	
