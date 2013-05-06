@@ -10,9 +10,9 @@
  *      
  */
 //defining our necessary keys and url here
-$client_id = "ENTER YOUR CLIENT ID HERE";
-$secret = "ENTER YOUR SECRET ID HERE";
-$redirect = "ENTER YOUR REDIRECT URI HERE";
+$client_id = "520RC3NSGXPBO2K3RRMWJPLDGGO33ULBXJBTXIRIIVEMHSJM";
+$secret = "WKDZV4XA11531XYR2UJWE3BQ2VA1SLJSNTP4BKRSNS5UPQ4Y";
+$redirect = "http://shionguha.webfactional.com/scripts/4sq_Callback.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
