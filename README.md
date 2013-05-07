@@ -5,7 +5,7 @@ This is a code repository for connecting to the foursquare API (https://develope
 
 I am a graduate student of information science just learning to produce some rudimentary scripts. This codebase is meant to be a record of my research activities here.
 
-Guide:
+**File Descriptions:**
 
 index.php - main file where user authorizes your app. Inspiration from [Colin Wren's work](http://colinwren.com/foursquare-tutorial-part-1/)
 
